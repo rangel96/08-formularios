@@ -1,5 +1,12 @@
-<h4>Formularios <small> Template </small></h4>
-<button class="btn btn-outline-primary" routerLink="/reactivo">Reactivo</button>
+<div class="position-relative">
+    <h4>Formularios <small> Template </small></h4>
+  <div class="position-absolute bottom-0 end-0">
+    <button class="btn btn-outline-success" routerLink="/reactivo">Reactivo</button>
+  </div>
+</div>
+<div class="position-relative">
+
+</div>
 <hr>
 
 <form autocomplete="off" (ngSubmit)="saveForm(form)" #form="ngForm">
@@ -35,7 +42,8 @@
                required
                minlength="5"
                #apellido="ngModel">
-        <small *ngIf="apellido.invalid && apellido.touched" class="form-text text-danger">Ingrese mínimo 5 letras</small>
+        <small *ngIf="apellido.invalid && apellido.touched" class="form-text text-danger">Ingrese mínimo 5
+          letras</small>
       </div>
     </div>
 
